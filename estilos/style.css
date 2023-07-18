@@ -40,7 +40,7 @@ iframe#tela {
     left: 22px;
     width: 269px;
     height: 471px;
-}
+} /* configurações acima, são para configurar o posicionamento da imagem que mostra a tela do iphone, com os icones de aplicativos */
 
 /* São essas linhas de código que fazem o quadrado azul ou o objeto ficar bem no centro do fundo da tela:
 position: absolute;
@@ -50,3 +50,21 @@ position: absolute;
 --Para verificar qual o tamanho do frame do iphone, abrir a imagem no gimp, ir em propriedades da imagem e copiar o tamanho exato para por em height e width
 -- Primeiro tem que criar as caixas grandes e pequenas com cor de fundo para depois trocar elas pelas imagens de fundo.
     */
+
+section#redes-sociais {
+    text-align: right;
+}
+section#redes-sociais > a > img {
+width: 50px;
+margin: 10px;
+border-radius: 50%; /* essa função deixa os botões de logo das redes redondinhos */
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+box-sizing: border-box; /* essa função faz com que ao se passar o mouse pelos ícones de logo das redes sociais, não deixa todos os ícones mexerem, somente vai criar uma borda branca e dar aquela mexidinha em um logo por vez, ou seja, no logo que estou clicando atualmente */
+}
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px); /* essa função faz com que ao se passar o mouse sob o ícone de logo, o mesmo se mexa um pouquinho pra esquerda, dá uma levantadinha */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform 0.3s border 0.3s;
+
+}
