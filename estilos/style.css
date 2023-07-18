@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, Helvetica, sans-sarif;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url(../imagens/fundo-madeira.jpg);
+    background-repeat: no-repeat top center; /* alinhamento top e centralizado */
+    background-size: cover;
+    background-attachment: fixed; /* background fixed: para a imagem de fundo não rolar quando tiver bastante texto na tela */
+}
+main {
+    height: 100vh;
+    position: relative;
+     /* a tela ficou com 100% green porque zeramos a margin e padding */
+}
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background-color: blue;
+    background: url(../imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+
+}
+
+/* São essas linhas de código que fazem o quadrado azul ou o objeto ficar bem no centro do fundo da tela:
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+--Para verificar qual o tamanho do frame do iphone, abrir a imagem no gimp, ir em propriedades da imagem e copiar o tamanho exato para por em height e width
+-- Primeiro tem que criar as caixas grandes e pequenas com cor de fundo para depois trocar elas pelas imagens de fundo.
+    */
