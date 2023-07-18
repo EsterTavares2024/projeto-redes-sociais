@@ -34,6 +34,13 @@ section#telefone {
     background-repeat: no-repeat;
 
 }
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
 
 /* São essas linhas de código que fazem o quadrado azul ou o objeto ficar bem no centro do fundo da tela:
 position: absolute;
